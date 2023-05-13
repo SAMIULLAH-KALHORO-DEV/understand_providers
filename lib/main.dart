@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:understand_providers/statefullwidget.dart';
+import 'package:understand_providers/understand_provider.dart';
 
 import 'statelesswidget.dart';
 
@@ -8,9 +9,12 @@ void main(List<String> args) {
 }
 
 class MyApp extends StatelessWidget {
-   MyApp({super.key});
+  MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home:  StateFullWidget(),);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: UnderstandProvider(),
+    );
   }
 }
