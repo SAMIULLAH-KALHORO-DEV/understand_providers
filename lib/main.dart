@@ -16,12 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_)=> CountProvider(),
+      create: (_) => CountProvider(),
       child: MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: CountExample(),
+        debugShowCheckedModeBanner: false,
+        home: CountExample(),
       ),
     );
-
   }
 }
