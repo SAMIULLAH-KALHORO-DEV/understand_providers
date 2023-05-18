@@ -19,7 +19,6 @@ class _UnderstandProviderState extends State<UnderstandProvider> {
     Timer.periodic(Duration(seconds: 1), (timer) {
       x++;
       print(x);
-      setState(() {});
     });
   }
 
