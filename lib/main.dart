@@ -7,6 +7,7 @@ import 'package:understand_providers/provder/screens/cout_example.dart';
 import 'package:understand_providers/provder/screens/dark_theme.dart';
 import 'package:understand_providers/provder/screens/example_one.dart';
 import 'package:understand_providers/provder/screens/favorite/favorite_screen.dart';
+import 'package:understand_providers/provder/screens/notify_lister_screen.dart';
 import 'package:understand_providers/provder/theme_changer_provider.dart';
 import 'package:understand_providers/statefullwidget.dart';
 import 'package:understand_providers/understand_provider.dart';
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(brightness: Brightness.light),
             darkTheme: ThemeData(brightness: Brightness.dark),
             debugShowCheckedModeBanner: false,
-            home: DarkThemeScreen(),
+            home: NotifyListenerScreen(),
           );
         }));
   }
