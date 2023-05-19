@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:understand_providers/provder/count_provider.dart';
 import 'package:understand_providers/provder/example_one_provider.dart';
+import 'package:understand_providers/provder/favorite_provider.dart';
 import 'package:understand_providers/provder/screens/cout_example.dart';
 import 'package:understand_providers/provder/screens/example_one.dart';
+import 'package:understand_providers/provder/screens/favorite/favorite_screen.dart';
 import 'package:understand_providers/statefullwidget.dart';
 import 'package:understand_providers/understand_provider.dart';
 
@@ -20,10 +22,11 @@ class MyApp extends StatelessWidget {
     return MultiProvider(providers: [
       ChangeNotifierProvider(create: (_)=> CountProvider()),
       ChangeNotifierProvider(create: (_)=> ExampleOneProvider()),
+      ChangeNotifierProvider(create: (_)=> FavoriteItemProvider()),
     ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: ExampleOne(),
+        home: FavoriteScreen(),
       ),
     );
   }
