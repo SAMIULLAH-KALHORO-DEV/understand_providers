@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+// ignore: must_be_immutable
+class StateLessWidget extends StatelessWidget {
+  StateLessWidget({super.key});
   var x = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text("Understand Provider"))),
+      appBar: AppBar(title: Center(child: Text("StateFullwidget"))),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Container(
           child: Center(
